@@ -22,20 +22,24 @@
 
 <style type="text/css">	
 	.flex-container {
-		display: flex;
-		flex-wrap: wrap;
-		background-color: DodgerBlue;
-		justify-content: center;
-		padding: 20px;
+	    display: flex;
+	    flex-wrap: wrap;
+	    background-color: DodgerBlue;
+	    justify-content: center;
+	    padding: calc(1.1vw + 20px );
+	    padding-bottom: 0;
 	}
 
-	.well {
-		margin: 10px;
+	.container{
+		width: calc(100% - 200px) !important;
 	}
-
 	/*Constant Font Size For all Resolutions*/
-	.flex-container > div {
+	.flex-container > div, h1 {
 	    font-size: calc(12px + 5vh);
+	}
+	.well{
+		height: calc(100% - 20px);
+		padding: 0;
 	}
 
 	/*For Tablets and Ipads*/
